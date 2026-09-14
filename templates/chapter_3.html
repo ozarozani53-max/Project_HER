@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Chapter 3</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static',
+          filename='css/style.css') }}">
+
+</head>
+
+<body class="storm-page">
+
+    <div id="loader">
+
+    <div class="loader-content">
+
+        🌸
+
+        <p>
+            Preparing your journey...
+        </p>
+
+    </div>
+
+</div>
+
+    <div class="chapter-container">
+
+        <div class="chapter-card storm-card fade-in">
+
+            <h1>🌧️ Chapter Three</h1>
+
+            <h2>The Storm</h2>
+
+            <div class="timeline-card">
+
+                <span class="date-badge dark-badge">
+                    2025
+                </span>
+
+            </div>
+
+            <p>
+                If this were a normal story,
+                this is where everything
+                would have gone perfectly.
+            </p>
+
+            <p>
+                Ours didn't.
+            </p>
+
+            <p>
+                Somehow,
+                the people who had once tried
+                to get close became enemies.
+            </p>
+
+            <p>
+                Conversations disappeared.
+            </p>
+
+            <p>
+                Smiles disappeared.
+            </p>
+
+            <p>
+                And for a while,
+                it felt like that was how
+                things would stay.
+            </p>
+
+            <p class="highlight-line">
+                But storms don't last forever.
+            </p>
+
+            <img
+            src="{{ url_for('static',
+            filename='images/lilitha_4.jpg') }}"
+            class="story-photo storm-photo">
+
+            <div class="chapter-nav">
+
+                <a href="/chapter_2">
+                    <button>
+                        ← Previous
+                    </button>
+                </a>
+
+                <a href="/chapter_4">
+                    <button>
+                        Next →
+                    </button>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script
+src="{{ url_for('static',
+filename='js/petals.js') }}">
+</script>
+
+<script
+src="{{ url_for('static',
+filename='js/loader.js') }}">
+</script>
+
+</body>
+
+</html>

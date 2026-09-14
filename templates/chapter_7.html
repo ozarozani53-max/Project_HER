@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Chapter 7</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static',
+          filename='css/style.css') }}">
+
+</head>
+
+<body class="lilitha-page">
+
+    <div id="loader">
+
+    <div class="loader-content">
+
+        🌸
+
+        <p>
+            Preparing your journey...
+        </p>
+
+    </div>
+
+</div>
+
+    <div class="chapter-container">
+
+        <div class="chapter-card lilitha-card fade-in">
+
+            <h1>🌸 Chapter Seven</h1>
+
+            <h2>Just Lilitha</h2>
+
+            <p class="intro-text">
+                Before the relationship,
+                before the memories,
+                before everything...
+            </p>
+
+            <p class="intro-text">
+                There was simply you.
+            </p>
+
+            <div class="traits-grid">
+
+                <div class="trait-card">
+                    <h3>😂 Funny</h3>
+                    <p>
+                        Somehow you can turn
+                        an ordinary day into
+                        something memorable.
+                    </p>
+                </div>
+
+                <div class="trait-card">
+                    <h3>🎤 Loud</h3>
+                    <p>
+                        You bring energy
+                        wherever you go.
+                    </p>
+                </div>
+
+                <div class="trait-card">
+                    <h3>😤 Stubborn</h3>
+                    <p>
+                        Let's just say...
+                        admitting you're wrong
+                        isn't your favorite thing.
+                    </p>
+                </div>
+
+                <div class="trait-card">
+                    <h3>🌞 Bubbly</h3>
+                    <p>
+                        Your energy has a way
+                        of making people smile.
+                    </p>
+                </div>
+
+                <div class="trait-card">
+                    <h3>❤️ Caring</h3>
+                    <p>
+                        Behind the tough exterior
+                        is someone who cares deeply.
+                    </p>
+                </div>
+
+                <div class="trait-card">
+                    <h3>✨ Beautiful</h3>
+                    <p>
+                        Not just in appearance,
+                        but in the way you
+                        treat the people you love.
+                    </p>
+                </div>
+
+            </div>
+
+            <img
+            src="{{ url_for('static',
+            filename='images/lilitha_8.jpg') }}"
+            class="story-photo">
+
+            <p class="final-line">
+                And that's why this story
+                was always going to be about you.
+            </p>
+
+            <div class="chapter-nav">
+
+                <a href="/chapter_6">
+                    <button>
+                        ← Previous
+                    </button>
+                </a>
+
+                <a href="/final_letter">
+                    <button>
+                        Final Page →
+                    </button>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script
+src="{{ url_for('static',
+filename='js/petals.js') }}">
+</script>
+
+<script
+src="{{ url_for('static',
+filename='js/loader.js') }}">
+</script>
+
+</body>
+
+</html>

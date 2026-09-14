@@ -1,0 +1,713 @@
+/* ==========================================
+   GLOBAL
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    min-height:100vh;
+
+    font-family:Georgia, serif;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background-size:cover;
+    background-position:center;
+}
+
+/* ==========================================
+   HOME PAGE
+========================================== */
+
+body:not(.chapter-page):not(.storm-page):not(.spring-page):not(.love-page):not(.rose-page):not(.lilitha-page):not(.final-page){
+
+    background:
+    linear-gradient(
+        135deg,
+        #FDE2E4 0%,
+        #FFF8E7 35%,
+        #E9D8FD 70%,
+        #E2ECE9 100%
+    );
+}
+
+.overlay{
+
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    backdrop-filter:blur(4px);
+}
+
+.hero{
+
+    text-align:center;
+
+    color:#3D405B;
+
+    max-width:850px;
+
+    padding:60px;
+
+    background:
+    rgba(255,255,255,0.25);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:30px;
+
+    border:
+    1px solid rgba(255,255,255,0.4);
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,0.08);
+}
+
+.hero h1{
+
+    font-size:4rem;
+    margin-bottom:10px;
+}
+
+.hero h2{
+
+    font-size:1.6rem;
+
+    font-weight:normal;
+
+    color:#5A5A5A;
+
+    margin-bottom:40px;
+}
+
+#typewriter{
+
+    font-size:1.4rem;
+
+    line-height:2;
+
+    min-height:180px;
+
+    margin-bottom:30px;
+}
+
+#beginBtn{
+
+    opacity:0;
+
+    padding:15px 35px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:#F8F4EC;
+
+    cursor:pointer;
+
+    font-size:1rem;
+
+    transition:.3s;
+}
+
+#beginBtn:hover{
+
+    transform:scale(1.05);
+}
+
+/* ==========================================
+   CHAPTERS
+========================================== */
+
+.chapter-page{
+
+    background:
+    linear-gradient(
+    135deg,
+    #F8F4EC,
+    #E9D8FD);
+}
+
+.chapter-container{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    padding:60px 20px;
+}
+
+.chapter-card{
+
+    background:white;
+
+    width:100%;
+    max-width:900px;
+
+    border-radius:25px;
+
+    padding:50px;
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,0.1);
+
+    text-align:center;
+}
+
+.chapter-card h1{
+
+    color:#A984E8;
+
+    margin-bottom:10px;
+}
+
+.chapter-card h2{
+
+    color:#444;
+
+    margin-bottom:30px;
+}
+
+.chapter-card p{
+
+    font-size:1.2rem;
+
+    color:#555;
+
+    line-height:2;
+}
+
+/* ==========================================
+   PHOTOS
+========================================== */
+
+.story-photo{
+
+    width:300px;
+
+    max-width:90%;
+
+    border-radius:20px;
+
+    margin-top:30px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* ==========================================
+   TIMELINE
+========================================== */
+
+.timeline-card{
+
+    margin:30px 0;
+}
+
+.date-badge{
+
+    background:#A984E8;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:50px;
+
+    font-weight:bold;
+}
+
+/* ==========================================
+   NAVIGATION
+========================================== */
+
+.chapter-nav{
+
+    margin-top:40px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:20px;
+}
+
+.chapter-nav button{
+
+    padding:12px 25px;
+
+    border:none;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.chapter-nav button:hover{
+
+    transform:translateY(-2px);
+}
+
+/* ==========================================
+   ANIMATION
+========================================== */
+
+.fade-in{
+
+    animation:fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+    }
+}
+
+/* ==========================================
+   CHAPTER 3
+========================================== */
+
+.storm-page{
+
+    background:
+    linear-gradient(
+        135deg,
+        #2F3E46,
+        #354F52,
+        #52796F
+    );
+}
+
+.storm-card{
+
+    background:rgba(255,255,255,0.95);
+}
+
+.dark-badge{
+
+    background:#354F52;
+}
+
+.highlight-line{
+
+    margin-top:25px;
+
+    font-size:1.4rem;
+
+    font-weight:bold;
+
+    color:#52796F;
+}
+
+/* ==========================================
+   CHAPTER 4
+========================================== */
+
+.spring-page{
+
+    background:
+    linear-gradient(
+        135deg,
+        #F8F4EC,
+        #D8F3DC,
+        #CDEAC0
+    );
+}
+
+.spring-badge{
+
+    background:#7FB069;
+}
+
+.highlight-spring{
+
+    margin-top:25px;
+
+    font-size:1.3rem;
+
+    font-weight:bold;
+
+    color:#7FB069;
+}
+
+/* ==========================================
+   CHAPTER 5
+========================================== */
+
+.love-page{
+
+    background:
+    linear-gradient(
+        135deg,
+        #FFF0F3,
+        #FFE5EC,
+        #F8EDEB
+    );
+}
+
+.love-badge{
+
+    background:#FF758F;
+}
+
+.highlight-love{
+
+    margin-top:25px;
+
+    font-size:1.4rem;
+
+    font-weight:bold;
+
+    color:#FF758F;
+}
+
+/* ==========================================
+   CHAPTER 6
+========================================== */
+
+.rose-page{
+
+    background:
+    linear-gradient(
+        135deg,
+        #FFE5EC,
+        #FFC2D1,
+        #FFB3C6
+    );
+}
+
+.rose-badge{
+
+    background:#D6336C;
+}
+
+.highlight-rose{
+
+    margin-top:25px;
+
+    font-size:1.4rem;
+
+    font-weight:bold;
+
+    color:#D6336C;
+}
+
+/* ==========================================
+   CHAPTER 7
+========================================== */
+
+.lilitha-page{
+
+    background:
+    linear-gradient(
+        135deg,
+        #FFF8E7,
+        #FDE2E4,
+        #E2ECE9
+    );
+}
+
+.traits-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+    margin:40px 0;
+
+    align-items:start;
+}
+
+.trait-card{
+
+    background:#F8F4EC;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,0.08);
+
+    transition:.3s;
+
+    min-height:220px;
+}
+
+.trait-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 15px 30px rgba(169,132,232,0.25);
+}
+
+.trait-card h3{
+
+    margin-bottom:15px;
+
+    color:#A984E8;
+}
+
+.intro-text{
+
+    font-size:1.2rem;
+
+    margin-bottom:15px;
+}
+
+.final-line{
+
+    margin-top:30px;
+
+    font-size:1.3rem;
+
+    font-weight:bold;
+
+    color:#A984E8;
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+    .hero h1{
+
+        font-size:2.5rem;
+    }
+
+    .hero h2{
+
+        font-size:1.2rem;
+    }
+
+    .chapter-card{
+
+        padding:30px;
+    }
+
+    .chapter-card p{
+
+        font-size:1rem;
+    }
+
+    .chapter-nav{
+
+        flex-direction:column;
+    }
+}
+
+/* ==========================================
+   FINAL LETTER
+========================================== */
+
+.final-page{
+
+    background:
+    linear-gradient(
+        135deg,
+        #FFF8E7,
+        #FFE5EC,
+        #E2ECE9
+    );
+}
+
+.final-card{
+
+    max-width:950px;
+}
+
+.letter{
+
+    text-align:left;
+
+    margin-top:40px;
+
+    line-height:2.2;
+}
+
+.letter p{
+
+    margin-bottom:18px;
+}
+
+.special-line{
+
+    font-size:1.4rem !important;
+
+    font-weight:bold;
+
+    color:#A984E8 !important;
+
+    text-align:center;
+}
+
+.flower-message{
+
+    margin-top:40px;
+
+    font-size:1.2rem;
+
+    color:#A984E8;
+
+    font-weight:bold;
+
+    text-align:center;
+}
+
+/* ==========================
+   FALLING PETALS
+========================== */
+
+.petal{
+
+    position:fixed;
+
+    top:-50px;
+
+    pointer-events:none;
+
+    z-index:9999;
+
+    animation:fall linear forwards;
+}
+
+@keyframes fall{
+
+    from{
+
+        transform:
+        translateY(0)
+        rotate(0deg);
+
+        opacity:1;
+    }
+
+    to{
+
+        transform:
+        translateY(110vh)
+        rotate(360deg);
+
+        opacity:0.2;
+    }
+}
+
+/* ==========================
+   LOADER
+========================== */
+
+#loader{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:
+    linear-gradient(
+    135deg,
+    #FDE2E4,
+    #E2ECE9);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:10000;
+
+    transition:1s;
+}
+
+.loader-content{
+
+    text-align:center;
+
+    font-size:2rem;
+
+    color:#A984E8;
+}
+
+.loader-content p{
+
+    margin-top:20px;
+}
+
+/* ==========================================
+   HOMEPAGE MAGIC GLOW
+========================================== */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:
+
+    radial-gradient(
+        circle at 20% 20%,
+        rgba(255,255,255,0.45),
+        transparent 25%
+    ),
+
+    radial-gradient(
+        circle at 80% 30%,
+        rgba(255,255,255,0.35),
+        transparent 30%
+    ),
+
+    radial-gradient(
+        circle at 50% 80%,
+        rgba(255,255,255,0.4),
+        transparent 25%
+    );
+
+    pointer-events:none;
+
+    z-index:-1;
+}

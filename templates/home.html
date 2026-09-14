@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>
+        For Lilitha 🌸
+    </title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div id="loader">
+
+    <div class="loader-content">
+
+        🌸
+
+        <p>
+            Preparing your journey...
+        </p>
+
+    </div>
+
+</div>
+
+<div class="overlay">
+
+    <div class="hero">
+
+        <h1>
+            For Lilitha 🌸
+        </h1>
+
+        <h2>
+            From Strangers,<br>
+            To Enemies,<br>
+            To Us.
+        </h2>
+
+        <div id="typewriter"></div>
+
+        <a href="/chapter_1">
+            <button id="beginBtn">
+                Begin Journey 🌸
+            </button>
+        </a>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static',
+filename='js/typewriter.js') }}"></script>
+ 
+<script
+src="{{ url_for('static',
+filename='js/petals.js') }}">
+</script>
+
+<script
+src="{{ url_for('static',
+filename='js/loader.js') }}">
+</script>
+
+</body>
+
+</html>

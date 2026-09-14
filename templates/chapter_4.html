@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Chapter 4</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static',
+          filename='css/style.css') }}">
+
+</head>
+
+<body class="spring-page">
+
+    <div id="loader">
+
+    <div class="loader-content">
+
+        🌸
+
+        <p>
+            Preparing your journey...
+        </p>
+
+    </div>
+
+</div>
+
+    <div class="chapter-container">
+
+        <div class="chapter-card spring-card fade-in">
+
+            <h1>🌱 Chapter Four</h1>
+
+            <h2>The Beginning Again</h2>
+
+            <div class="timeline-card">
+
+                <span class="date-badge spring-badge">
+                    January 2026
+                </span>
+
+            </div>
+
+            <p>
+                Some stories get a second chance.
+            </p>
+
+            <p>
+                Ours did.
+            </p>
+
+            <p>
+                After everything that had happened,
+                we somehow found our way
+                back into each other's lives.
+            </p>
+
+            <p>
+                We talked again.
+            </p>
+
+            <p>
+                We laughed again.
+            </p>
+
+            <p>
+                We became friends again.
+            </p>
+
+            <p>
+                And slowly,
+                without either of us realizing it,
+                we became closer than ever.
+            </p>
+
+            <p class="highlight-spring">
+                Sometimes the best chapters
+                begin after the hardest ones.
+            </p>
+
+            <img
+            src="{{ url_for('static',
+            filename='images/lilitha_5.jpg') }}"
+            class="story-photo">
+
+            <div class="chapter-nav">
+
+                <a href="/chapter_3">
+                    <button>
+                        ← Previous
+                    </button>
+                </a>
+
+                <a href="/chapter_5">
+                    <button>
+                        Next →
+                    </button>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script
+src="{{ url_for('static',
+filename='js/petals.js') }}">
+</script>
+
+<script
+src="{{ url_for('static',
+filename='js/loader.js') }}">
+</script>
+
+</body>
+
+</html>

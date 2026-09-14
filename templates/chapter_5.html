@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Chapter 5</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static',
+          filename='css/style.css') }}">
+
+</head>
+
+<body class="love-page">
+
+    <div id="loader">
+
+    <div class="loader-content">
+
+        🌸
+
+        <p>
+            Preparing your journey...
+        </p>
+
+    </div>
+
+</div>
+
+    <div class="chapter-container">
+
+        <div class="chapter-card love-card fade-in">
+
+            <h1>❤️ Chapter Five</h1>
+
+            <h2>More Than Friends</h2>
+
+            <div class="timeline-card">
+
+                <span class="date-badge love-badge">
+                    20 February 2026
+                </span>
+
+            </div>
+
+            <p>
+                By now, things were different.
+            </p>
+
+            <p>
+                We weren't enemies anymore.
+            </p>
+
+            <p>
+                We weren't just classmates anymore.
+            </p>
+
+            <p>
+                We weren't even just friends anymore.
+            </p>
+
+            <p>
+                Somewhere between the conversations,
+                the laughter,
+                and all the time we spent together...
+            </p>
+
+            <p>
+                Something changed.
+            </p>
+
+            <p>
+                We became more than friends.
+            </p>
+
+            <p class="highlight-love">
+                On 20 February 2026,
+                you became my girlfriend. ❤️
+            </p>
+
+            <p>
+                Looking back,
+                I don't think either of us
+                expected our story to unfold
+                the way it did.
+            </p>
+
+            <p>
+                But honestly?
+            </p>
+
+            <p>
+                I wouldn't change it.
+            </p>
+
+            <img
+            src="{{ url_for('static',
+            filename='images/lilitha_1.jpg') }}"
+            class="story-photo">
+
+            <div class="chapter-nav">
+
+                <a href="/chapter_4">
+                    <button>
+                        ← Previous
+                    </button>
+                </a>
+
+                <a href="/chapter_6">
+                    <button>
+                        Next →
+                    </button>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script
+src="{{ url_for('static',
+filename='js/petals.js') }}">
+</script>
+
+<script
+src="{{ url_for('static',
+filename='js/loader.js') }}">
+</script>
+
+</body>
+
+</html>

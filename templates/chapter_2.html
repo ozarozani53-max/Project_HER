@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Chapter 2</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static',
+          filename='css/style.css') }}">
+
+</head>
+
+<body class="chapter-page">
+
+    <div id="loader">
+
+    <div class="loader-content">
+
+        🌸
+
+        <p>
+            Preparing your journey...
+        </p>
+
+    </div>
+
+</div>
+
+    <div class="chapter-container">
+
+        <div class="chapter-card fade-in">
+
+            <h1>🌷 Chapter Two</h1>
+
+            <h2>The First Attempt</h2>
+
+            <div class="timeline-card">
+
+                <span class="date-badge">
+                    May 2025
+                </span>
+
+            </div>
+
+            <p>
+                Somewhere around May,
+                I finally gathered enough courage
+                to approach you.
+            </p>
+
+            <p>
+                I had no idea what would happen.
+            </p>
+
+            <p>
+                I just knew I wanted
+                to get to know you.
+            </p>
+
+            <p>
+                Surprisingly...
+            </p>
+
+            <p>
+                You said yes.
+            </p>
+
+            <p>
+                Looking back now,
+                neither of us knew
+                how complicated our story
+                was about to become.
+            </p>
+
+            <img
+            src="{{ url_for('static',
+            filename='images/lilitha_3.jpg') }}"
+            class="story-photo">
+
+            <div class="chapter-nav">
+
+                <a href="/chapter_1">
+                    <button>
+                        ← Previous
+                    </button>
+                </a>
+
+                <a href="/chapter_3">
+                    <button>
+                        Next →
+                    </button>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script
+src="{{ url_for('static',
+filename='js/petals.js') }}">
+</script>
+
+<script
+src="{{ url_for('static',
+filename='js/loader.js') }}">
+</script>
+
+</body>
+
+</html>
